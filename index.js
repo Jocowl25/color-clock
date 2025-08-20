@@ -10,6 +10,11 @@ function update(){
     time[2]=date.getMinutes().toString().charAt(1)
     time[1]=date.getMinutes().toString().charAt(0)
     time[0]=date.getHours()%12
+    if(date.getHours()>11){
+        document.body.style.backgroundColor="black"
+    }else{
+        document.body.style.backgroundColor="grey"
+    }
     time.forEach((time,i)=>{
         if(time==0){
         topColorDivs[i].style.backgroundColor="black"
