@@ -7,9 +7,13 @@ const bottomColorDivs=document.querySelectorAll(".bottom")
 requestAnimationFrame(update)
 function update(){
     let date=new Date()
-    time[2]=date.getMinutes().toString().charAt(1)
-    time[1]=date.getMinutes().toString().charAt(0)
+    let min=date.getMinutes();
+    if(min<10){
+        min="0"+min
+    }
     time[0]=date.getHours()%12
+    time[1]=min.toString().charAt(0)
+    time[2]=min.toString().charAt(1)
     if(date.getHours()>11){
         document.body.style.backgroundColor="black"
     }else{
