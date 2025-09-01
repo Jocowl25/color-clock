@@ -1,6 +1,6 @@
 let time=[10,3,5]
-let colorsTop=["#ff0000","#15ff00ff","#0011ff"]
-let colorsBottom=["#ff0000","#00ff33ff","#0011ff"]
+let colorsTop=["#ff0000","#ffee00","#0011ff"]
+let colorsBottom=["#ff0000","#ffee00","#0011ff"]
 //let colorsBottom=["#ff00d4ff","#ffee00","#00ffe1ff"]
 const topColorDivs=document.querySelectorAll(".top")
 const bottomColorDivs=document.querySelectorAll(".bottom")
